@@ -1,0 +1,111 @@
+<!-- 
+ 自己紹介のホームページ
+ ナビゲーションバー
+ 自分の名前と写真
+ 自分の趣味
+ 自分の経歴をテーブルで
+ 自分宛のメールフォーム -->
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kumaのホームページ</title>
+    <!-- cssの導入 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- fontのnoto-sans-font埋め込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>kumaのホームページ</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#">自己紹介</a></li>
+                <li><a href="#">趣味</a></li>
+                <li><a href="#">経歴</a></li>
+                <li><a href="#">メールフォーム</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="self-introduction">
+            <h2>自己紹介</h2>
+            <!-- kuma.jpgの挿入 -->
+            <div class="self-introduction-content">
+                <div class="self-introduction-image-circle"></div>
+                <div class="self-introduction-text">
+                    <h3>クマ</h3>
+                    <p>青森県出身の大学院生。公立はこだて未来大学で情報について学ぶ。学部1年のころから現在までの5年間学内のプロジェクトに参加。主に、Reactを使用してＷebサービスを開発してる。
+                        最近はサーバーサイドにも興味あり。</p>
+                    <!-- Twitterとgithubのアイコンとそのリンク -->
+                    <div class="sns">
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img
+                                src="./image/twitter.png" alt="twitter"></a>
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><img
+                                src="./image/github.png" alt="twitter"></a>
+                    </div>
+                </div>
+        </section>
+        <section>
+            <h2>趣味</h2>
+            <p>サッカー観戦で主に鹿島アントラーズ、ヴァンラーレ八戸、海外ではトッテナムの試合を見てる。歩くのが好きで大学まで徒歩で1時間20分かけて通学している。通学中はradikoで芸人のラジオを聞いてる。最近はaudibleを契約して自己啓発本を聞いている。
+            </p>
+        </section>
+        <section class="career">
+            <h2>スキルセット</h2>
+            <table>
+                <tr>
+                    <th>言語</th>
+                    <th>レベル</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>自己紹介用のホームページ作成で使用</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>自己紹介用のホームページ作成で使用</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>未学習</td>
+                </tr>
+            </table>
+        </section>
+        <section class="contact-form">
+            <h2>メールフォーム</h2>
+            <form action="" method="post">
+                <ul>
+                    <li>
+                        <label for="name">お名前
+                        </label>
+                        <input type="text" name="name" id="name">
+                    </li>
+                    <li>
+                        <label for="email">メールアドレス</label>
+                        <input type="text" name="email" id="email">
+                    </li>
+                    <li>
+                        <label for="text">お問い合わせ内容</label>
+                        <textarea name="content" id="text" cols="30" rows="10"></textarea>
+                    </li>
+                    <li>
+                        <button type="submit">メッセージを送信</button>
+                    </li>
+                </ul>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>©︎kuma</p>
+    </footer>
+</body>
+
+</html>
