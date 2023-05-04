@@ -50,24 +50,6 @@ section {
 /* ナビゲーションバー用のCSS */
 /*ーーーーーーーーーーー */
 
-/* navberの横並び flex*/
-.navbar {
-  display: flex;
-  background-color: #424242;
-}
-/* navの色を黒、文字の色を白、bold */
-.navbar a {
-  color: white;
-  font-weight: bold;
-  /* aタグの下線をなくする */
-  text-decoration: none;
-}
-/* .navbarのliタグの点をなくす */
-.navbar li {
-  list-style-type: none;
-  padding: 20px;
-}
-
 /*ーーーーーーーーーーー */
 /* 自己紹介用のCSS */
 /*ーーーーーーーーーーー */
@@ -149,65 +131,6 @@ td {
 /*ーーーーーーーーーーー */
 /* メールフォーム用のCSS */
 /*ーーーーーーーーーーー */
-
-form {
-  /* ページの中央に配置 */
-  margin: 0 auto;
-  width: 400px;
-}
-
-.contact-form input,
-.contact-form textarea,
-.contact-form button {
-  /* width: 300px; */
-  box-sizing: border-box;
-  border: 1px solid #999;
-  margin: 0 auto;
-  display: block;
-}
-
-.contact-form input,
-.contact-form textarea {
-  /* テキスト入力に十分な空間を与える */
-  padding: 5px;
-  width: 100%;
-}
-
-textarea {
-  /* 複数行のテキストフィールドをラベルに揃える */
-  vertical-align: top;
-
-  /* テキスト入力に十分な空間を与える */
-  height: 10em;
-}
-
-input:focus,
-textarea:focus {
-  /* フォーカスのある要素を強調する */
-  border-color: gold;
-}
-
-.contact-form ul {
-  list-style: none;
-}
-
-.contact-form li {
-  margin-bottom: 10px;
-}
-
-.contact-form label {
-  display: block;
-  width: 200px;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.contact-form button {
-  width: 200px;
-  font-size: 10pt;
-  border-radius: 10px;
-  padding: 5px 0;
-}
 
 /*ーーーーーーーーーーー */
 /* フッター用のCSS */
